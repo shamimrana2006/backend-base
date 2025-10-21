@@ -1,9 +1,10 @@
 {
 	"info": {
-		"_postman_id": "32a5b95c-83ce-44b7-9e54-f79c22b7dbd9",
+		"_postman_id": "75dfa8e8-b8d9-4141-a42a-3713f41a98a6",
 		"name": "base 7 practise",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "36553475"
+		"_exporter_id": "36553475",
+		"_collection_link": "https://www.postman.com/registration-2314/workspace/next5th/collection/36553475-75dfa8e8-b8d9-4141-a42a-3713f41a98a6?action=share&source=collection_link&creator=36553475"
 	},
 	"item": [
 		{
@@ -25,12 +26,10 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:3000/user/68f5e59dc843c65a4a79a0cf/role",
-							"protocol": "http",
+							"raw": "{{base_url}}/user/68f5e59dc843c65a4a79a0cf/role",
 							"host": [
-								"localhost"
+								"{{base_url}}"
 							],
-							"port": "3000",
 							"path": [
 								"user",
 								"68f5e59dc843c65a4a79a0cf",
@@ -46,12 +45,10 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/user/68f5e59dc843c65a4a79a0cf",
-							"protocol": "http",
+							"raw": "{{base_url}}/user/68f5e59dc843c65a4a79a0cf",
 							"host": [
-								"localhost"
+								"{{base_url}}"
 							],
-							"port": "3000",
 							"path": [
 								"user",
 								"68f5e59dc843c65a4a79a0cf"
@@ -66,12 +63,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/users?age=23423&page=2&limit=2",
-							"protocol": "http",
+							"raw": "{{base_url}}/users?age=23423&page=2&limit=2",
 							"host": [
-								"localhost"
+								"{{base_url}}"
 							],
-							"port": "3000",
 							"path": [
 								"users"
 							],
@@ -139,12 +134,10 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:3000/product/deleteProductsWithAdmin",
-							"protocol": "http",
+							"raw": "{{base_url}}/product/deleteProductsWithAdmin",
 							"host": [
-								"localhost"
+								"{{base_url}}"
 							],
-							"port": "3000",
 							"path": [
 								"product",
 								"deleteProductsWithAdmin"
@@ -197,12 +190,10 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:3000/product/updateProductsWithAdmin",
-							"protocol": "http",
+							"raw": "{{base_url}}/product/updateProductsWithAdmin",
 							"host": [
-								"localhost"
+								"{{base_url}}"
 							],
-							"port": "3000",
 							"path": [
 								"product",
 								"updateProductsWithAdmin"
@@ -234,12 +225,10 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost:3000/login",
-					"protocol": "http",
+					"raw": "{{base_url}}/login",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"login"
 					]
@@ -272,12 +261,10 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost:3000/logout",
-					"protocol": "http",
+					"raw": "{{base_url}}/logout",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"logout"
 					]
@@ -309,12 +296,10 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost:3000/init",
-					"protocol": "http",
+					"raw": "{{base_url}}/init",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"init"
 					]
@@ -335,12 +320,10 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:3000/profile",
-					"protocol": "http",
+					"raw": "{{base_url}}/profile",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"profile"
 					]
@@ -361,12 +344,10 @@
 					"urlencoded": []
 				},
 				"url": {
-					"raw": "http://localhost:3000/logout",
-					"protocol": "http",
+					"raw": "{{base_url}}/logout",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"logout"
 					]
@@ -406,12 +387,10 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost:3000/register",
-					"protocol": "http",
+					"raw": "{{base_url}}/register",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"register"
 					]
@@ -461,12 +440,10 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost:3000/product/add",
-					"protocol": "http",
+					"raw": "{{base_url}}/product/add",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"product",
 						"add"
@@ -520,12 +497,10 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost:3000/product/updateProductsWithUser",
-					"protocol": "http",
+					"raw": "{{base_url}}/product/updateProductsWithUser",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"product",
 						"updateProductsWithUser"
@@ -580,12 +555,10 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost:3000/product/DelateProductsWithUser",
-					"protocol": "http",
+					"raw": "{{base_url}}/product/DelateProductsWithUser",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"product",
 						"DelateProductsWithUser"
@@ -633,12 +606,10 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost:3000/product/demoProducts",
-					"protocol": "http",
+					"raw": "{{base_url}}/product/demoProducts",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"product",
 						"demoProducts"
@@ -683,12 +654,10 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost:3000/emailTesting",
-					"protocol": "http",
+					"raw": "{{base_url}}/emailTesting",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"emailTesting"
 					]
@@ -732,12 +701,10 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost:3000/resetTokenCreator",
-					"protocol": "http",
+					"raw": "{{base_url}}/resetTokenCreator",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"resetTokenCreator"
 					]
@@ -785,12 +752,10 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost:3000/forgotpassotp",
-					"protocol": "http",
+					"raw": "{{base_url}}/forgotpassotp",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"forgotpassotp"
 					]
@@ -849,12 +814,10 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost:3000/forgotTokenCreator",
-					"protocol": "http",
+					"raw": "{{base_url}}/forgotTokenCreator",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"forgotTokenCreator"
 					]
@@ -908,12 +871,10 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost:3000/forgotPassWithToken",
-					"protocol": "http",
+					"raw": "{{base_url}}/forgotPassWithToken",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"forgotPassWithToken"
 					]
@@ -967,12 +928,10 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost:3000/forgotPassWithToken",
-					"protocol": "http",
+					"raw": "{{base_url}}/forgotPassWithToken",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"forgotPassWithToken"
 					]
@@ -984,7 +943,10 @@
 			"name": "New Request",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": ""
+				}
 			},
 			"response": []
 		}
