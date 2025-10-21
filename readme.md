@@ -1,3 +1,9 @@
+
+##postmant
+[postman](https://www.postman.com/registration-2314/workspace/next5th/collection/36553475-75dfa8e8-b8d9-4141-a42a-3713f41a98a6?action=share&source=copy-link&creator=36553475)
+
+
+##env
 ```base
 PORT=3000
 DB_URL=mongodb://localhost:27017/test7ths
