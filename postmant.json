@@ -1,0 +1,992 @@
+{
+	"info": {
+		"_postman_id": "32a5b95c-83ce-44b7-9e54-f79c22b7dbd9",
+		"name": "base 7 practise",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36553475"
+	},
+	"item": [
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "user role change by admin",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "role",
+									"value": "admin",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/68f5e59dc843c65a4a79a0cf/role",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"68f5e59dc843c65a4a79a0cf",
+								"role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user delete by user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/user/68f5e59dc843c65a4a79a0cf",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"68f5e59dc843c65a4a79a0cf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users wiht pagination",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users?age=23423&page=2&limit=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "age",
+									"value": "23423"
+								},
+								{
+									"key": "page",
+									"value": "2"
+								},
+								{
+									"key": "limit",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete product with admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "productName",
+									"value": "x300",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "description",
+									"value": "camera focused mobile pohone expensive. this phone provide our famus mobile builder company vivo",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "smart phone",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "price",
+									"value": "30000",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "stock",
+									"value": "12000",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "_id",
+									"value": "68f27b611e021b25370761e3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/product/deleteProductsWithAdmin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"product",
+								"deleteProductsWithAdmin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update product with admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "productName",
+									"value": "aroyan 5",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "camera focused mobile pohone expensive. this phone provide our famus mobile builder company vivo",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "bike",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "30000",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "stock",
+									"value": "10",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "_id",
+									"value": "68f27b611e021b25370761e3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/product/updateProductsWithAdmin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"product",
+								"updateProductsWithAdmin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "shamimranaprofessional@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "asdf",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				},
+				"description": "this is practise project"
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "shamim@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "asdf",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ssl-commerz",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "shamim@gmial.com1",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "asdf",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/init",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"init"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:3000/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "shamim",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "shamim@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "asdf",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "345",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "products add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "productName",
+							"value": "tomar hater mala",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "camera focused mobile pohone expensive. this phone provide our famus mobile builder company vivo",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "smart phone",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "30000",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "12000",
+							"type": "text"
+						},
+						{
+							"key": "_id",
+							"value": "68f23a1c9b381d913d58ba55",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/product/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update product with user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "productName",
+							"value": "samsung s50 ultra",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "camera focused mobile pohone expensive. this phone provide our famus mobile builder company vivo",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "category",
+							"value": "smart phone",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "price",
+							"value": "30000",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "stock",
+							"value": "12000",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "_id",
+							"value": "68f27b611e021b25370761e3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/product/updateProductsWithUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product",
+						"updateProductsWithUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete product with user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "productName",
+							"value": "x300",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "description",
+							"value": "camera focused mobile pohone expensive. this phone provide our famus mobile builder company vivo",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "category",
+							"value": "smart phone",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "price",
+							"value": "30000",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "stock",
+							"value": "12000",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "_id",
+							"value": "68f313f4c2a1fb3bd9b05ffa",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/product/DelateProductsWithUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product",
+						"DelateProductsWithUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "demo products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "productName",
+							"value": "x300",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "camera focused mobile pohone expensive. this phone provide our famus mobile builder company vivo",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "smart phone",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "30000",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "12000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/product/demoProducts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product",
+						"demoProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "emailSender",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "productName",
+							"value": "x300",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "camera focused mobile pohone expensive. this phone provide our famus mobile builder company vivo",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "smart phone",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "30000",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "12000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/emailTesting",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"emailTesting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "resetTokenCreator",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "productName",
+							"value": "x300",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "camera focused mobile pohone expensive. this phone provide our famus mobile builder company vivo",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "smart phone",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "30000",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "12000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/resetTokenCreator",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"resetTokenCreator"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "otpGenerate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "productName",
+							"value": "x300",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "shamimranaprofessional@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "smart phone",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "price",
+							"value": "30000",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "stock",
+							"value": "12000",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/forgotpassotp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"forgotpassotp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "otpchekTokencreat",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "productName",
+							"value": "x300",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "description",
+							"value": "camera focused mobile pohone expensive. this phone provide our famus mobile builder company vivo",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "category",
+							"value": "smart phone",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "price",
+							"value": "30000",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "stock",
+							"value": "12000",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "shamimranaprofessional@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "otp",
+							"value": "590506",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/forgotTokenCreator",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"forgotTokenCreator"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "forgotPassWithToken",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "productName",
+							"value": "x300",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "description",
+							"value": "camera focused mobile pohone expensive. this phone provide our famus mobile builder company vivo",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "category",
+							"value": "smart phone",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "price",
+							"value": "30000",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "stock",
+							"value": "12000",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "newPassword",
+							"value": "this is the new password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/forgotPassWithToken",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"forgotPassWithToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "resetPasswordwithOld password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "productName",
+							"value": "x300",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "description",
+							"value": "camera focused mobile pohone expensive. this phone provide our famus mobile builder company vivo",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "category",
+							"value": "smart phone",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "price",
+							"value": "30000",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "stock",
+							"value": "12000",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "newPassword",
+							"value": "this is the new password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/forgotPassWithToken",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"forgotPassWithToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

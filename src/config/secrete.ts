@@ -1,0 +1,11 @@
+import "dotenv/config";
+export const port = process.env.PORT;
+export const DB_URL = process.env.DB_URL!;
+export const GOOGLE_ID = process.env.GOOGLE_ID!;
+export const GOOGLE_SECRET = process.env.GOOGLE_SECRET!;
+export const BACKEND_ORIGIN = process.env.BACKEND_ORIGIN!;
+export const FRONTEND_ORIGIN = process.env.FRONTEND_ORIGIN!;
+export const SSL_PAYMENT_ID = process.env.SSL_PAYMENT_ID!;
+export const SSL_PAYMENT_SECRETE = process.env.SSL_PAYMENT_SECRETE!;
+export const GOOGLE_APP_PASSWORD = process.env.GOOGLE_APP_PASSWORD!;
+export const TOKEN_SECRETE = process.env.TOKEN_SECRETE!;

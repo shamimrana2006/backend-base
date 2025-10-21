@@ -1,0 +1,53 @@
+{
+  "name": "7th",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/server.js",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "node ./dist/server.js",
+    "build": "tsc",
+    "swagger": "npx ts-node ./src/swagger.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "connect-mongo": "^5.1.0",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "express-session": "^1.18.2",
+    "express-validator": "^7.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.19.1",
+    "nodemailer": "^7.0.9",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "sslcommerz-lts": "^1.2.0",
+    "swagger-autogen": "^2.23.7",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cookie-parser": "^1.4.9",
+    "@types/express": "^5.0.3",
+    "@types/express-session": "^1.18.2",
+    "@types/express-validator": "^2.20.33",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/mongoose": "^5.11.96",
+    "@types/node": "^24.7.2",
+    "@types/nodemailer": "^7.0.2",
+    "@types/passport": "^1.0.17",
+    "@types/passport-google-oauth20": "^2.0.16",
+    "@types/passport-local": "^1.0.38",
+    "@types/swagger-ui-express": "^4.1.8",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
